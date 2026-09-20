@@ -1,0 +1,7 @@
+{
+  "note": "Placeholder normalized costs. Replace with post-synthesis measured values before paper claims.",
+  "ORA8": {"latency_per_k": 1.0, "energy_per_k": 1.0, "bits_per_value": 8},
+  "INT4": {"latency_per_k": 1.0, "energy_per_k": 0.72, "bits_per_value": 4},
+  "INT2": {"latency_per_k": 0.25, "energy_per_k": 0.32, "bits_per_value": 2},
+  "FP4":  {"latency_per_k": 0.5, "energy_per_k": 0.68, "bits_per_value": 4}
+}

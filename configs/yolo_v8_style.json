@@ -1,0 +1,27 @@
+{
+  "note": "style/example only; import actual ONNX for exact graph",
+  "layers": [
+    {
+      "name": "stem",
+      "op": "conv",
+      "cin": 3,
+      "cout": 32,
+      "h": 320,
+      "w": 320,
+      "k": 3,
+      "stride": 2,
+      "af": 3
+    },
+    {
+      "name": "detect0",
+      "op": "conv",
+      "cin": 64,
+      "cout": 144,
+      "h": 80,
+      "w": 80,
+      "k": 1,
+      "stride": 1,
+      "af": 1
+    }
+  ]
+}

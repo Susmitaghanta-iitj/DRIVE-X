@@ -1,0 +1,27 @@
+{
+  "array_n": 8,
+  "precision_modes": {
+    "0": "ORA8",
+    "1": "EXACT4_RMMEC4",
+    "2": "4xINT2_RMMEC2_REDUCED",
+    "3": "2xFP4_E2M1_RMMEC2_REDUCED"
+  },
+  "rmmec2_cells_per_pe": 4,
+  "accumulator_bits": 24,
+  "fp_acc_frac": 8,
+  "fp4_format": {
+    "name": "E2M1 finite-only project mode",
+    "bits": "S E[1:0] M[0]",
+    "bias": 1,
+    "exp00": "zero",
+    "subnormals": false,
+    "inf_nan": false
+  },
+  "af_input_bits": 8,
+  "af_input_format": "S4.4",
+  "af_output_bits": 16,
+  "shared_sigmoid_segments": 8,
+  "range_saturation": 8.0,
+  "banks": 8,
+  "nms": "riscv_default"
+}

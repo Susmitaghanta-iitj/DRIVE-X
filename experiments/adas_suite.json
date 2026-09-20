@@ -1,0 +1,16 @@
+{
+  "application": "ADAS",
+  "primary_dataset": "BDD100K",
+  "tasks": [
+    {"name":"road_object_detection","dataset":"BDD100K","metric":"mAP50-95"},
+    {"name":"lane_marking","dataset":"BDD100K","metric":"F1/IoU"},
+    {"name":"drivable_area","dataset":"BDD100K","metric":"mIoU"},
+    {"name":"driver_gaze_head_pose","dataset":"DMD","metric":"angular_error"},
+    {"name":"driver_distraction","dataset":"DMD","metric":"F1"},
+    {"name":"driver_hands","dataset":"DMD","metric":"mAP/F1"}
+  ],
+  "quantization": {
+    "independent": ["ORA8","INT4","INT2","FP4"],
+    "mixed_precision": ["ORA8","INT4","INT2","FP4"]
+  }
+}
